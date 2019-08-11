@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function somarValores() {
+            var s1 = document.getElementById("s1").value;
+            var s2 = document.getElementById("s2").value;
+            var s3 = parseInt(s1) + parseInt(s2);
+            alert(s3);
+        }
+
+        function subtrairValores() {
+            var s1 = document.getElementById("s1").value;
+            var s2 = document.getElementById("s2").value;
+            var s3 = parseInt(s1) - parseInt(s2);
+            alert(s3);
+        }
+
+        function multiplicarValores() {
+            var s1 = document.getElementById("s1").value;
+            var s2 = document.getElementById("s2").value;
+            var s3 = parseInt(s1) * parseInt(s2);
+            alert(s3);
+        }
+
+        function dividirValores() {
+            var s1 = document.getElementById("s1").value;
+            var s2 = document.getElementById("s2").value;
+            var s3 = parseInt(s1) / parseInt(s2);
+            alert(s3);
+        }
+    </script>
+</head>
+
+<body>
+    <fieldset>
+        <legend><img src="logo-voffice.png"></legend>
+        <label >Valor 1:</label>
+        <input id="s1" type="text" />
+        <label>Valor 2: </label>
+        <input id="s2" type="text" />
+        <button id="somar" onclick="somarValores()">Somar</button >
+        <button id="subtrair" onclick="subtrairValores()">Subtrair</button>
+        <button id="multiplicar" onclick="multiplicarValores()">Multiplicar</button>
+        <button id="dividir" onclick="dividirValores()">Dividir</button>
+    </fieldset>
+
+</body>
+
+</html>

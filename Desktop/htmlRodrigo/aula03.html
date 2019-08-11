@@ -1,0 +1,18 @@
+<html>
+
+<body id="corpo">
+    <h1>Adicionar Elementos</h1>
+    <p>Digite o texto: <input type="text" id="texto"></p>
+    <p><button onclick="adicionar()">Adicionar</button></p>
+    <script>
+        function adicionar() {
+            var texto = document.getElementById("texto").value;
+            var para = document.createElement("p");
+            para.innerHTML = texto;
+            var corpo = document.getElementById("corpo");
+            corpo.appendChild(para);
+        }
+    </script>
+</body>
+
+</html>

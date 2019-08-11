@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title> FORMULÁRIO DE INSCRIÇÃO </title>
+
+    <style type="text/css">
+        .tdTitulo {
+            font-family: Arial;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            color: blue;
+            vertical-align: middle;
+            padding-right: 175px;
+        }
+
+        label {
+            font-family: Helvetica;
+            font-weight: bold;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <table cellpadding="5" align="center">
+        <tr>
+            <td style="width: 40%," align="left"> <img src="logo-voffice.png"> </td>
+            <td class="tdTitulo" style="width: 200%"> FORMULÁRIO DE INSCRIÇÃO </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <form>
+        <table border="0" align="center" cellpadding="10" >
+            <tr>
+                <td>
+                    <label style="margin-right: 30px">Nome:</label>
+                    <input type="text" name="nome" size="60px" required>
+                
+            </tr>
+            <tr>
+                <td>
+                    <label>Data Nascimento:</label>
+                    <input type="date" required>
+                    <label style="margin-left: 25px">Sexo:</label>
+                    <input type="radio" name="sexo" value="masc" required>Masculino
+                    <input type="radio" name="sexo" value="fem" required>Feminino
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label>Endereço:</label>
+                    <input type="text" name="endereco" size="60px" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label style="margin-right: 13px">Número:</label>
+                    <input type="text" name="numero" size="10px" required>
+                    <label style="margin-left: 58px">Complemento:</label>
+                    <input type="text" name="complemento" size="20px" required>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label style="margin-right: 40px">CEP:</label>
+                    <input type="text" name="cep" size="5px" maxlength="9" required>
+                    <label style="margin-left: 15px">Cidade:</label>
+                    <input type="text" name="cidade" size="20px" required>
+                    <label style="margin-left: 20px">Estado:</label>
+                    <select required>
+                        <option>--</option>
+                        <option>AC</option>
+                        <option>AL</option>
+                        <option>AP</option>
+                        <option>AM</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>DF</option>
+                        <option>ES</option>
+                        <option>GO</option>
+                        <option>MA</option>
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>MG</option>
+                        <option>PA</option>
+                        <option>PB</option>
+                        <option>PR</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RJ</option>
+                        <option>RS</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                        <option>SC</option>
+                        <option>SP</option>
+                        <option>SE</option>
+                        <option>TO</option>
+                    </select>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Telefone Fixo:</label>
+                    <input type="text" name="telFixo" size="15px" required>
+                    <label style="margin-left: 25px">Telefone Celular:</label>
+                    <input type="text" name="telCelular" size="13px" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Nome do Pai:</label>
+                    <input type="text" name="nomePai" size="57px">
+                </td>
+            <tr>
+                <td>
+                    <label>Nome da Mãe:</label>
+                    <input type="text" name="nomeMae" size="56px">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Estado Civil</label>
+                    <select>
+                        <option>Solteiro</option>
+                        <option>Casado</option>
+                        <option>Separado</option>
+                        <option>Divorciado</option>
+                        <option>Viúvo</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Renda Famíliar:</label>
+                    <select required>
+                        <option>Menos de 01 Salário Mínimo</option>
+                        <option>01 Salarío Mínimo</option>
+                        <option>02 Salaríos Mínimos</option>
+                        <option>03 Salaríos Mínimos</option>
+                        <option>Acima de 03 Salários Mínimos</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Curso Escolhido</label>
+                    <select required>
+                        <option>---</option>
+                        <option>Administração</option>
+                        <option>Direito</option>
+                        <option>Engenharia Civil</option>
+                        <option>Análise e Desenvolvimento de Sistemas</option>
+                        <option>Biblioteconomia</option>
+                        <option>Enfermagem</option>
+                        <option>Odontologia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Deseja solicitar bolsa de estudos:</label>
+                    <input type="radio" name="escolhaBolsa" value="Sim" required>Sim
+                    <input type="radio" name="escolhaBolsa" value="Não" required>Não
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label style="vertical-align: top">Justificativa da bolsa:</label>
+                    <textarea cols="50" rows="10"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <input type="submit" name="enviar" value="Enviar" >
+                    <input type="reset" name="limpar" value="Limpar">
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+
+</html>
